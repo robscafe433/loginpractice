@@ -1,6 +1,6 @@
 // import { login } from './utils';
 import './styles.css';
-//Practice project 
+// Practicing a login function inputs and async 
 
 // ================ LOGIN FORM ====================
 //
