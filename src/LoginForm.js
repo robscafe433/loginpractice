@@ -1,6 +1,7 @@
 // import { login } from './utils';
+import { useState } from 'react';
 import './styles.css';
-// Practicing a login function inputs and async 
+// Practicing a login function inputs and async
 
 // ================ LOGIN FORM ====================
 //
@@ -17,15 +18,18 @@ import './styles.css';
 //  * Show an alert box (native Javascript alert) if login succeeds. Investigate the login function to find out how to log in successfully.
 
 export default function LoginForm() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <div className="wrapper">
       <div className="row">
         <label htmlFor={'email'}>Email</label>
-        <input id={'email'} type={'email'} />
+        <input id={'email'} type={'email'} value={email} />
       </div>
       <div className="row">
         <label htmlFor={'password'}>Password</label>
-        <input id={'password'} type={'password'} />
+        <input id={'password'} type={'password'} value={password} />
       </div>
 
       {/* Place login error inside this div. Show the div ONLY if there are login errors. */}
